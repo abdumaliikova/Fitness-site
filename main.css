@@ -1736,41 +1736,6 @@ img {
     padding: 28px;
 }
 
-.pricelist-col-title {
-    font-size: 30px;
-    line-height: 30px;
-}
-
-.pricelist-col-span {
-    font-size: 24px;
-    line-height: 30px;
-
-}
-
-.pricelist-col-list {
-    padding-top: 20px;
-}
-.pricelist-col-text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 16px;
-}
-
-.pricelist-col-link {
-    margin-bottom: 20px;
-}
-.pricelist-col-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    font-family: Inter Tight;
-    font-weight: 400;
-    font-size: 14px;
-
-}
-}
-/* community start */
 .community {
     padding-top: 121px;
     padding-bottom: 121px;
