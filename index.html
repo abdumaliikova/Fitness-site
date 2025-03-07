@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,44 +17,67 @@
 
 <body>
     <!-- header start -->
-    <header class="header">
-        <div class="header-container">
-            <a href="@" class="header-logo"><img src="./image/header/headerLogo.svg" alt="header-logo"></a>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Trainers</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="header-box">
-                <a href="#" class="header-box-link">Log In</a>
-                <a href="#" class="header-box-link">Sign Up</a>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="@" class="header-logo"><img src="./image/header/headerLogo.svg" alt="header-logo"></a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trainers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="header-box">
+                    <a href="#" class="header-box-link">Log In</a>
+                    <a href="#" class="header-box-link">Sign Up</a>
+                </div>
+                <button class="header-btn">
+                    <img src="./image/header/bars-solid (1).svg" alt="" width="20px" height="20px">
+                </button>
+                <div class="header-Menu">
+                    <div class="headerMenu-box">
+                        <a href="#" class="headerMenu-logo"><img src="./image/header/headerLogo.svg" alt=""
+                                class="headerMenu-img"></a>
+                        <button class="headerMenu-btn"><img width="20" src="./image/header/headermenu-close.svg"
+                                alt=""></button>
+                    </div>
+                    <ul class="headerMenu-list">
+                        <li class="headerMenu-item"><a href="home" class="headerMenu-link">Home</a></li>
+                        <li class="headerMenu-item"><a href="#about" class="headerMenu-link">About</a></li>
+                        <li class="headerMenu-item"><a href="#" class="headerMenu-link">Services</a></li>
+                        <li class="headerMenu-item"><a href="#Trainers" class="headerMenu-link">Trainers</a></li>
+                        <li class="headerMenu-item"><a href="#Contact" class="headerMenu-link">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <button class="header-btn">
-                <img src="./image/header/bars-solid (1).svg" alt="" width="20px" height="20px">
-            </button>
-        </div>
-    </header>
-    <!-- header finish -->
-    <!-- section start -->
-    <section class="hero">
-        <div class="hero-box">
-            <div class="hero-div">
-                <h1 class="hero-title"> FITNESS
-                    <span class="hero-span"> AND <b class="hero-title-b"><b>HEALTH</b></b> </span> <br> TRAINING
-                </h1>
-                <p class="hero-text">Join a community of thousands transforming their lives through expert-guided
-                    fitness programs, personalized nutrition, and holistic wellness</p>
-                <a href="#" class="hero-btn">Get Started Now</a>
+        </header>
+        <!-- header finish -->
+        <!-- section start -->
+        <section id="home" class="hero">
+            <div class="hero-box">
+                <div class="hero-div">
+                    <h1 class="hero-title"> FITNESS
+                        <span class="hero-span"> AND <b class="hero-title-b"><b>HEALTH</b></b> </span> <br> TRAINING
+                    </h1>
+                    <p class="hero-text">Join a community of thousands transforming their lives through expert-guided
+                        fitness programs, personalized nutrition, and holistic wellness</p>
+                    <a href="#" class="hero-btn">Get Started Now</a>
 
+                </div>
+                <div class="hero-row">
+                    <div class="hero-col">
+                        <img src="./image/section-1/Icon (9).svg" alt="">
+                        <h4 class="hero-col-title">3,4 <span class="hero-col-span">km</span></h4>
+                    </div>
+                    <img class="hero-img" src="./image/section-1/Hero Section Image.png" alt="">
+                </div>
             </div>
-            <img class="hero-img" src="./image/section-1/Hero Section Image.png" alt="">
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- section finish -->
     <!-- section start -->
-    <section class="empower">
+    <section id="about" class="empower">
         <div class="empower-container">
             <img src="./image/section-2/Hero Section Subheading Container.svg" alt="" class="empower-img">
             <h1 class="empower-title">Empower Your <span class="empower-title-span">Health</span> Journey</h1>
@@ -103,6 +128,7 @@
             <div class="program-box">
                 <div class="div-for-flex-1">
                     <div class="program-col">
+                        <img src="./image/section-2/decor-img.svg" alt="" class="decor-img">
                         <img src="./image/section-3/section-3-Icon-1.svg" alt="">
                         <h3 class="program-col-titl">Strength Training</h3>
                         <p class="program-col-text">With expert-guided workouts, progress tracking, and tailored
@@ -117,18 +143,21 @@
                 </div>
                 <div class="div-for-flex">
                     <div class="program-col">
+                        <img src="./image/section-2/decor-img.svg" alt="" class="decor-img">
                         <img src="./image/section-3/section-3-Icon-3.svg" alt="">
                         <h3 class="program-col-titl">body building</h3>
                         <p class="program-col-text">With expert-guided workouts, progress tracking, and tailored
                             routines, you’ll achieve your goals safely and effectively.</p>
                     </div>
                     <div class="program-col">
+                        <img src="./image/section-2/decor-img.svg" alt="" class="decor-img">
                         <img src="./image/section-3/section-3-Icon-4.svg" alt="">
                         <h3 class="program-col-titl">Basic Yoga</h3>
                         <p class="program-col-text">With expert-guided workouts, progress tracking, and tailored
                             routines, you’ll achieve your goals safely and effectively.</p>
                     </div>
                     <div class="program-col">
+                        <img src="./image/section-2/decor-img.svg" alt="" class="decor-img">
                         <img src="./image/section-3/section-3-Icon-5.svg" alt="">
                         <h3 class="program-col-titl">weight loss</h3>
                         <p class="program-col-text">With expert-guided workouts, progress tracking, and tailored
@@ -173,14 +202,100 @@
         </div>
     </section>
     <!-- section finish -->
+    <!-- section start -->
+    <section id="Trainers" class="trainers">
+        <div class="trainers-container">
+            <div class="trainers-info">
+                <img class="trainers-img" src="./image/section-4/logo.svg" alt="">
+                <h2 class="trainers-title">Meet our <b>Trainers</b></h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="trainers-card">
+                            <img class="trainers-card-img" src="./image/section-4/section-4img-1.png" alt="">
+                            <div class="trainers-card-info">
+                                <div class="trainers-card-info-left">
+                                    <h3 class="trainers-card-title">Andreas Remos</h3>
+                                    <p class="trainers-card-card-text">Taga Instructor</p>
+                                </div>
+                                <div class="trainers-card-starts">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trainers-card">
+                            <img class="trainers-card-img" src="./image/section-4/section-4-img-2.png" alt="">
+                            <div class="trainers-card-info">
+                                <div class="trainers-card-info-left">
+                                    <h3 class="trainers-card-title">Andreas Remos</h3>
+                                    <p class="trainers-card-card-text">Taga Instructor</p>
+                                </div>
+                                <div class="trainers-card-starts">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trainers-card">
+                            <img class="trainers-card-img" src="./image/section-4/section-4img-3.png" alt="">
+                            <div class="trainers-card-info">
+                                <div class="trainers-card-info-left">
+                                    <h3 class="trainers-card-title">Andreas Remos</h3>
+                                    <p class="trainers-card-card-text">Taga Instructor</p>
+                                </div>
+                                <div class="trainers-card-starts">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                    <img class="trainers-card-start" src="./image/section-4/Star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next1">
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 
+                        Gulsanam, [07/03/2025 11:15 am]
+                        <path d="M16.5 7H1.5M1.5 7L7.125 1M1.5 7L7.125 13" stroke="#1D1E22" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="swiper-button-prev1">
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 7H1.5M1.5 7L7.125 1M1.5 7L7.125 13" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section finish -->
     <!-- section start -->
     <section class="highlight">
         <div class="highlight-container">
-            <a href="#" class="highlight-logo"><img src="/image/section-5/logo.svg" alt="" class="highlight-logo-img"></a>
+            <a href="#" class="highlight-logo"><img src="/image/section-5/logo.svg" alt=""
+                    class="highlight-logo-img"></a>
             <h1 class="highlight-title">highlights of<span class="span">health</span> success history</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/X3q5e1pV4pc?si=WF1dAzARjuLI3fSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
-            
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X3q5e1pV4pc?si=WF1dAzARjuLI3fSp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+
             <div class="highlight-box">
                 <img src="./image/section-5/section-img-1.svg" alt="" class="highlight-box-img">
                 <img src="image/section-5/section-img-2.svg" alt="" class="highlight-box-img">
@@ -318,16 +433,16 @@
         </div>
     </section>
     <!-- section finish -->
-    <section class="fitgo">
+    <section id="Contact" class="fitgo">
         <div class="fitgo-box">
             <div class="fitgo-div1">
                 <img class="fitgo-img" src="./image/footer/Logo (2).svg" alt="">
-                <div class="fitgo-div1-div">
+                <form class="fitgo-div1-div">
                     <input class="fitgo-div1-inp" type="text" placeholder="enter your email">
-                    <a href="#" class="fitgo-div1-div-btn">
+                    <button class="fitgo-div1-div-btn">
                         <img src="./image/footer/icon (15).svg" alt="">
-                    </a>
-                </div>
+                    </button>
+                </form>
 
             </div>
             <div class="fitgo-div2">
@@ -342,17 +457,17 @@
                 <div class="fitgo-div2-div1">
                     <h4 class="fitgo-div2-div1-title">Company</h4>
                     <div class="fitgo-company">
-                        <img src="./img/fitgo-1.svg" alt="">
+                        <img src="./image/footer/telephon-icon.svg" alt="">
                         <a href="#" class="fitgo-company-text">[+01] 334-998-0934</a>
 
                     </div>
                     <div class="fitgo-company">
-                        <img src="./img/fitgo-2.svg" alt="">
+                        <img src="./image/footer/email-icon.svg" alt="">
                         <a href="#" class="fitgo-company-text">www.fitgo@example.com</a>
 
                     </div>
                     <div class="fitgo-company">
-                        <img src="./img/fitgo-3.svg" alt="">
+                        <img src="./image/footer/location-icon.svg" alt="">
                         <a href="" class="fitgo-company-text">Street no. 123, Cempaka Village, <br> Harmoni Flowers, Zip
                             Code 45678</a>
 
@@ -361,7 +476,7 @@
                 <div class="fitgo-div3-div">
                     <h4 class="fitgo-div3-div-title">Social media</h4>
                     <div class="fitgo-div3-div-img">
-                        <a class="fitgo-a" href="#">
+                        <a target="_blank" class="fitgo-a" href="#">
 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -378,30 +493,40 @@
                                     d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
                                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
+                        </a>
+
+                        <a target="_blank" class="fitgo-a" href="#">
+
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 8V12H3.5V19H7.5V12H10.5L11.5 8H7.5V6C7.5 5.45533 7.95533 5 8.5 5H11.5V1H8.5C5.77667 1 3.5 3.27667 3.5 6V8H0.5Z"
+                                    stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
 
                         </a>
 
-                        <a class="fitgo-a" href="#">
+                        <a target="_blank" class="fitgo-a" href="#">
 
-                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 8V12H3.5V19H7.5V12H10.5L11.5 8H7.5V6C7.5 5.45533 7.95533 5 8.5 5H11.5V1H8.5C5.77667 1 3.5 3.27667 3.5 6V8H0.5Z" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.1722 15.2987C16.3741 15.0494 17.4646 14.6172 18.3123 13.9827C19.7601 12.899 20.5 11.2254 20.5 9.57192C20.5 8.41196 20.0593 7.329 19.2964 6.41176C18.8713 5.90064 20.1148 2.5396 19.01 3.05321C17.9053 3.56682 16.2854 4.25113 15.4363 4.00023C14.5273 3.73161 13.5366 3.58403 12.5 3.58403C11.5996 3.58403 10.734 3.69536 9.9263 3.90064C8.7523 4.19903 7.62955 3.53758 6.5 3.05321C5.37043 2.56884 5.9868 6.06067 5.6513 6.47548C4.92059 7.37895 4.5 8.43866 4.5 9.57192C4.5 11.2254 5.39543 12.899 6.84315 13.9827C7.80755 14.7044 9.017 15.1645 10.3701 15.3912"
+                                    stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10.3701 15.3916C9.79087 16.0279 9.50122 16.6321 9.50122 17.2042C9.50122 17.7763 9.50122 18.6729 9.50122 21.0003"
+                                    stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.1721 15.2988C15.721 16.0178 15.9955 16.6633 15.9955 17.2354C15.9955 17.8076 15.9955 18.6937 15.9955 21.0002"
+                                    stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M3.5 15.668C3.94943 15.7228 4.28277 15.929 4.5 16.2867C4.82584 16.823 6.0371 18.8129 7.41255 18.8129C8.32955 18.8129 9.02575 18.8129 9.5012 18.8129"
+                                    stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
                         </a>
-
-                        <a class="fitgo-a" href="#">
-
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.1722 15.2987C16.3741 15.0494 17.4646 14.6172 18.3123 13.9827C19.7601 12.899 20.5 11.2254 20.5 9.57192C20.5 8.41196 20.0593 7.329 19.2964 6.41176C18.8713 5.90064 20.1148 2.5396 19.01 3.05321C17.9053 3.56682 16.2854 4.25113 15.4363 4.00023C14.5273 3.73161 13.5366 3.58403 12.5 3.58403C11.5996 3.58403 10.734 3.69536 9.9263 3.90064C8.7523 4.19903 7.62955 3.53758 6.5 3.05321C5.37043 2.56884 5.9868 6.06067 5.6513 6.47548C4.92059 7.37895 4.5 8.43866 4.5 9.57192C4.5 11.2254 5.39543 12.899 6.84315 13.9827C7.80755 14.7044 9.017 15.1645 10.3701 15.3912" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10.3701 15.3916C9.79087 16.0279 9.50122 16.6321 9.50122 17.2042C9.50122 17.7763 9.50122 18.6729 9.50122 21.0003" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.1721 15.2988C15.721 16.0178 15.9955 16.6633 15.9955 17.2354C15.9955 17.8076 15.9955 18.6937 15.9955 21.0002" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3.5 15.668C3.94943 15.7228 4.28277 15.929 4.5 16.2867C4.82584 16.823 6.0371 18.8129 7.41255 18.8129C8.32955 18.8129 9.02575 18.8129 9.5012 18.8129" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                        </a>
-                        <a class="fitgo-a" href="#">
+                        <a target="_blank" class="fitgo-a" href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -419,17 +544,67 @@
             </div>
         </div>
     </section>
-    <section class="terms">
+    <footer class="terms">
         <div class="terms-box">
             <p class="terms-text">©2025 Fitgo All rights reserved</p>
             <p class="terms-text">Terms & Conditions | Privacy Policy</p>
         </div>
-    </section>
+    </footer>
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                470: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
 
+
+        let responsivediv = document.querySelector(".header-Menu")
+        let hamburger = document.querySelector(".header-btn")
+        let responsiveimg = document.querySelector(".headerMenu-btn")
+        let items = document.querySelectorAll(".headerMenu-link")
+        let headerMenu = document.querySelector(".header-Menu")
+
+        hamburger.addEventListener("click", function () {
+            responsivediv.classList.add("active")
+        })
+
+        responsiveimg.addEventListener("click", function () {
+            responsivediv.classList.remove("active")
+        })
+
+        items.forEach(function (item, index) {
+            item.addEventListener('click', function () {
+                headerMenu.classList.remove("active")
+            })
+        })
+
+    </script>
 
 </body>
 
