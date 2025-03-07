@@ -1171,7 +1171,9 @@ img {
 
     .program-col {
         padding: 30px;
-        max-width: 400px;
+        width: 100%;
+        max-width: none;
+        text-align: center;
     }
 
     .program-col-titl {
@@ -1188,11 +1190,14 @@ img {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: -1%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     .program-row {
-        max-width: 300px;
+        max-width: 100%;
         padding: 100px 30px 20px 30px;
         margin-left: auto;
         margin-right: auto;
@@ -1220,8 +1225,9 @@ img {
     }
 
     .program-col-icon {
-        max-width: 30px;
         margin-bottom: 20px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -1402,8 +1408,8 @@ img {
     font-size: 80px;
     line-height: 112px;
     letter-spacing: 1%;
-    text-align: center;
     margin-bottom: 70px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1702,7 +1708,6 @@ img {
     }
     
     .pricelist-title {
-        max-width: 600px;
         font-weight: 400;
         font-size: 80px;
         line-height: 80px;
@@ -1713,6 +1718,7 @@ img {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
+        align-items: center;
     }
     
     .pricelist-col {
@@ -1848,7 +1854,7 @@ img {
 @media (max-width:600px){
 
 .pricelist-title {
-    max-width: 40px;
+    max-width: 300px;
     font-size: 40px;
     line-height: 50px;
 }
@@ -1865,12 +1871,9 @@ img {
 }
 
 .pricelist-col-title {
-    max-width: 200px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .pricelist-col-span {
@@ -1902,8 +1905,7 @@ img {
 
 }
 .pricelist-col-item img{
-    width: 16px;
-    height: 16px;
+    display: none;
 }
 }
 /* pricelist finish */
